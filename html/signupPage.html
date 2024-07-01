@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/signupPage.css">
+</head>
+<body class="vh-100 d-flex justify-content-center align-items-center">
+    
+    <form class="d-flex flex-column align-items-center bg-transparent px-3 py-2 rounded-2">
+        <h1 class="fs-3 mt-5">Create an account</h1>
+        <input id="name" type="text" placeholder="Enter your name" class="form-control bg-transparent mt-3">
+        <div class="emailInput w-100">
+            <input type="email" placeholder="Enter your email" class="form-control mt-2 bg-transparent">
+            <ul class="text-danger ewl d-none">
+                <li>must start with a letter</li>
+                <li>must contain at least 3 charachters</li>
+                <li>must contain @ and (.)</li>
+                <li>@ must have after it from 1-12 letters</li>
+                <li>(.) must have after it from 2-5 letters</li>
+                <li>can contain letters, numbers and underscores</li>
+            </ul>
+            <ul class="text-danger d-none emailAlreadyExists">
+                <li>This email is already taken</li>
+            </ul>
+        </div>
+        <div class="passInput w-100">
+            <input type="password" placeholder="Enter your password" class="form-control mt-2 bg-transparent">
+            <ul class="text-danger pwl d-none">
+                <li>The password is at least 4 and at max 8 characters long.</li>
+                <li>The password contains at least one letter (uppercase and lowercase).</li>
+                <li>The password contains at least one digit.</li>
+            </ul>
+        </div>
+        
+        <button id="signup" class="my-4 p-1 bg-transparent w-100 rounded-1">Sign Up</button>
+        <a href="loginPage.html" class="text-decoration-none text-white">Back to login page</a>
+    </form>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/signupPage.js"></script>
+</body>
+</html>
