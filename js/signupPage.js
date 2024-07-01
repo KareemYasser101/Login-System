@@ -73,7 +73,7 @@ function addAccount(e){
             Accounts.push(user);
             exportToLocalDB();
             clearForm();
-            window.location.href = "../html/loginPage.html";
+            window.location.href = "../html/index.html";
         }
     }
 }

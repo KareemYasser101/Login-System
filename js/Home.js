@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 var logOutBtn = document.querySelector("#logOutBtn");
 logOutBtn.addEventListener("click", logOut);
 function logOut(){
-    location.href = "../html/loginPage.html";
+    location.href = "../html/index.html";
 }
 
 /*****************API content display************* */
