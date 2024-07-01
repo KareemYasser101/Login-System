@@ -24,12 +24,15 @@ function checkEmail(){
         if(Accounts[i].email === emailField.value)
             loginSuccess = true;
     }
-    if(loginSuccess){
-        emailWarningList.classList.add("d-none");
+    if(emailField.value != ""){
+        if(loginSuccess){
+            emailWarningList.classList.add("d-none");
+        }
+        else{
+            emailWarningList.classList.remove("d-none");
+        }
     }
-    else{
-        emailWarningList.classList.remove("d-none");
-    }
+    
 }
 
 passField.addEventListener("blur", checkPass);
@@ -38,11 +41,13 @@ function checkPass(){
         if(Accounts[i].password === passField.value)
             loginSuccess = true;
     }
-    if(loginSuccess){
-        passWarningList.classList.add("d-none");
-    }
-    else{
-        passWarningList.classList.remove("d-none");
+    if(passField.value != ""){
+        if(loginSuccess){
+            passWarningList.classList.add("d-none");
+        }
+        else{
+            passWarningList.classList.remove("d-none");
+        }
     }
 }
 
